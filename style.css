@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #edf3f7;
+    color: #203040;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(120deg, #10243a, #167c80);
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    padding: 20px 8%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #8ff5e5;
+}
+
+.hero {
+    padding: 35px 8% 65px;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+main {
+    max-width: 900px;
+    margin: -20px auto 30px;
+    padding: 0 18px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #10243a15;
+}
+
+h2 {
+    color: #087b85;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: right;
+    margin-left: 20px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+a {
+    color: #087b85;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dce5eb;
+}
+
+th {
+    background: #e8f4f4;
+}
+
+.note {
+    color: #657786;
+    font-size: 13px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #607180;
+}
+
+@media (max-width: 600px) {
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    img {
+        float: none;
+        display: block;
+        margin: 0 0 15px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+}
